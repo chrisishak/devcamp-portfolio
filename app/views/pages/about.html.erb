@@ -1,2 +1,16 @@
 <h1>Pages#about</h1>
 <p>Find me in app/views/pages/about.html.erb</p>
+
+
+<table>
+  <tbody>
+     <% @skills.each do |skill| %>
+	    <tr>
+	        <td><%= skill.title %></td>
+	        <td><%= skill.percent_utilized %></td>
+        </tr>
+     <% end %>
+  </tbody>
+</table>
+
+
